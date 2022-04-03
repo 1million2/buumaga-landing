@@ -8,6 +8,13 @@
     <title>Бумажная продукция</title>
 </head>
 <body>
+    <div class="popup">
+        <div class="popup_body">
+            <a href="#" class="close">x</a>
+            <p class="popup_text">Позвоните по номеру что бы оформить заказ</p>
+            <a class="popup_tel" href="tel:+375291579017">+375 (29) 157-90-17</a>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header">
@@ -21,9 +28,14 @@
                         <li class="nav_item"><a class="nav-link" href="#delivery">Доставка</a></li>
                     </ul>
                 </nav>
-                <div class="header_contacts">
-                    <a class="contact-link" href="tel:+375291579017">+375 (29) 157 90 17</a>
-                    <a class="contact-link" href="tel:+375296168036">+375 (29) 616 80 36</a>
+                <div class="header_contacts contacts">
+                    <svg class="icon">
+                        <use xlink:href="./assets/img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <div class="phone-number">
+                        <a class="contact-link" href="tel:+375291579017">+375 (29) 157 90 17</a>
+                        <a class="contact-link" href="tel:+375296168036">+375 (29) 616 80 36</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,105 +64,107 @@
     </section>
     <section class="goods">
         <div class="container">
-            <div class="card-items">
-                <div class="item">
-                    <div class="status in-stock">в наличии</div>
-                    <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
-                    <div class="item_photo">
-                        <img src="./assets/img/universal-big.jpg" alt="Navigator">
+            <div class="goods-body">
+                <div class="card-items">
+                    <div class="item">
+                        <div class="status in-stock">в наличии</div>
+                        <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
+                        <div class="item_photo">
+                            <img src="./assets/img/universal-big.jpg" alt="Navigator">
+                        </div>
+                        <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
+                        <div class="item_text">
+                            <ul class="characteristics">
+                                <li class="characteristic">Класс А</li>
+                                <li class="characteristic">Белизна (CIE) 169</li>
+                                <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
+                                <li class="characteristic">Непрозрачность 95%</li>
+                            </ul>
+                        </div>
+                        <div class="item_footer">
+                            <div class="item_price">Цена 49,99 руб.</div>
+                            <button class="buy">Купить</button>
+                        </div>
                     </div>
-                    <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
-                    <div class="item_text">
-                        <ul class="characteristics">
-                            <li class="characteristic">Класс А</li>
-                            <li class="characteristic">Белизна (CIE) 169</li>
-                            <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
-                            <li class="characteristic">Непрозрачность 95%</li>
-                        </ul>
+                    <div class="item">
+                        <div class="status in-stock">в наличии</div>
+                        <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
+                        <div class="item_photo">
+                            <img src="./assets/img/allr.jpg" alt="Allround">
+                        </div>
+                        <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
+                        <div class="item_text">
+                            <ul class="characteristics">
+                                <li class="characteristic">Класс А</li>
+                                <li class="characteristic">Белизна (CIE) 169</li>
+                                <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
+                                <li class="characteristic">Непрозрачность 95%</li>
+                            </ul>
+                        </div>
+                        <div class="item_footer">
+                            <div class="item_price">Цена 49,99 руб.</div>
+                            <button class="buy">Купить</button>
+                        </div>
                     </div>
-                    <div class="item_footer">
-                        <div class="item_price">Цена 49,99 руб.</div>
-                        <button class="buy">Купить</button>
+                    <div class="item">
+                        <div class="status expected">ожидается</div>
+                        <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
+                        <div class="item_photo">
+                            <img src="./assets/img/sveto.jpg" alt="Svetocopy">
+                        </div>
+                        <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
+                        <div class="item_text">
+                            <ul class="characteristics">
+                                <li class="characteristic">Класс А</li>
+                                <li class="characteristic">Белизна (CIE) 169</li>
+                                <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
+                                <li class="characteristic">Непрозрачность 95%</li>
+                            </ul>
+                        </div>
+                        <div class="item_footer">
+                            <div class="item_price">Цена 49,99 руб.</div>
+                            <button class="buy">Купить</button>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="status in-stock">в наличии</div>
-                    <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
-                    <div class="item_photo">
-                        <img src="./assets/img/allr.jpg" alt="Allround">
+                    <div class="item">
+                        <div class="status in-stock">в наличии</div>
+                        <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
+                        <div class="item_photo">
+                            <img src="./assets/img/maraph.jpg" alt="Maraphon">
+                        </div>
+                        <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
+                        <div class="item_text">
+                            <ul class="characteristics">
+                                <li class="characteristic">Класс А</li>
+                                <li class="characteristic">Белизна (CIE) 169</li>
+                                <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
+                                <li class="characteristic">Непрозрачность 95%</li>
+                            </ul>
+                        </div>
+                        <div class="item_footer">
+                            <div class="item_price">Цена 49,99 руб.</div>
+                            <button class="buy">Купить</button>
+                        </div>
                     </div>
-                    <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
-                    <div class="item_text">
-                        <ul class="characteristics">
-                            <li class="characteristic">Класс А</li>
-                            <li class="characteristic">Белизна (CIE) 169</li>
-                            <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
-                            <li class="characteristic">Непрозрачность 95%</li>
-                        </ul>
-                    </div>
-                    <div class="item_footer">
-                        <div class="item_price">Цена 49,99 руб.</div>
-                        <button class="buy">Купить</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="status expected">ожидается</div>
-                    <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
-                    <div class="item_photo">
-                        <img src="./assets/img/sveto.jpg" alt="Svetocopy">
-                    </div>
-                    <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
-                    <div class="item_text">
-                        <ul class="characteristics">
-                            <li class="characteristic">Класс А</li>
-                            <li class="characteristic">Белизна (CIE) 169</li>
-                            <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
-                            <li class="characteristic">Непрозрачность 95%</li>
-                        </ul>
-                    </div>
-                    <div class="item_footer">
-                        <div class="item_price">Цена 49,99 руб.</div>
-                        <button class="buy">Купить</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="status in-stock">в наличии</div>
-                    <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
-                    <div class="item_photo">
-                        <img src="./assets/img/maraph.jpg" alt="Maraphon">
-                    </div>
-                    <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
-                    <div class="item_text">
-                        <ul class="characteristics">
-                            <li class="characteristic">Класс А</li>
-                            <li class="characteristic">Белизна (CIE) 169</li>
-                            <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
-                            <li class="characteristic">Непрозрачность 95%</li>
-                        </ul>
-                    </div>
-                    <div class="item_footer">
-                        <div class="item_price">Цена 49,99 руб.</div>
-                        <button class="buy">Купить</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="status">ожидается</div>
-                    <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
-                    <div class="item_photo">
-                        <img src="./assets/img/sneg.webp" alt="Navigator">
-                    </div>
-                    <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
-                    <div class="item_text">
-                        <ul class="characteristics">
-                            <li class="characteristic">Класс А</li>
-                            <li class="characteristic">Белизна (CIE) 169</li>
-                            <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
-                            <li class="characteristic">Непрозрачность 95%</li>
-                        </ul>
-                    </div>
-                    <div class="item_footer">
-                        <div class="item_price">Цена 49,99 руб.</div>
-                        <button class="buy">Купить</button>
+                    <div class="item">
+                        <div class="status">ожидается</div>
+                        <div class="item_title">Офисная бумага Navigator Universal A4 (80 г/м2)</div>
+                        <div class="item_photo">
+                            <img src="./assets/img/sneg.webp" alt="Navigator">
+                        </div>
+                        <div class="item_description">Бумага A класса.Улучшенная поверхность, бархатистая на ощуп, снижает износ принтера и уменшает потребление тонера.</div>
+                        <div class="item_text">
+                            <ul class="characteristics">
+                                <li class="characteristic">Класс А</li>
+                                <li class="characteristic">Белизна (CIE) 169</li>
+                                <li class="characteristic">Поверхностная плотность 80 г/кв.м.</li>
+                                <li class="characteristic">Непрозрачность 95%</li>
+                            </ul>
+                        </div>
+                        <div class="item_footer">
+                            <div class="item_price">Цена 49,99 руб.</div>
+                            <button class="buy">Купить</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +178,7 @@
             </div>
             <div class="map">
                 <div class="map-body">
-                    <img src="./assets/img/map.png" alt="map">
+                    <img class="map-image" src="./assets/img/map.png" alt="map">
                     <div class="map_list">
                         <ul class="shop-list">
                             <li><a class="shop-link" href="http://">ул. В. Голубка 2 (ТЦ Bonus)</a></li>
@@ -181,8 +195,7 @@
                 <h2>БЕСПЛАТНАЯ ДОСТАВКА ПО МИНСКУ</h2>
                 <h3>*в пределах МКАД г. Минска, при заказе от 3 пачек любой бумаги формата А4 500л.</h3>
             </div>
-            <div class="order">
-                <p>Позвонить сейчас</p>
+            <!-- <div class="order">
                 <button class="order-btn">
                     <a href="tel:+375291579017">
                         <svg class="icon">
@@ -190,10 +203,45 @@
                         </svg>
                     </a>
                 </button>
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div class="hero footer">
+            <div class="container">
+                <div class="footer_body">
+                    <div class="footer_adress">
+                        <p class="footer_contact-title">
+                            Адреса магазинов:
+                        </p>
+                        <ul class="shop-list">
+                            <li><a class="shop-link" href="http://">ул. В. Голубка 2 (ТЦ Bonus)</a></li>
+                            <li><a class="shop-link" href="http://">ул. Матусевича 66</a></li>
+                            <li><a class="shop-link" href="http://">ул. Слободская 57</a></li>
+                            <li><a class="shop-link" href="http://">ул. Сурганова 50 (ТЦ Рига)</a></li>
+                            <li><a class="shop-link" href="http://">б-р Шевченко 12</a></li>
+                            <li><a class="shop-link" href="http://">ул. Долгобродская 8</a></li>
+                        </ul>
+                    </div>
+                    <p class="copy">&copy; 2020-2022</p>
+                    <div class="footer_contacts">
+                        <div class="contacts">
+                            <svg class="icon">
+                                <use xlink:href="./assets/img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <div class="phone-numbers">
+                                <a class="contact-link" href="tel:+375291579017">+375 (29) 157 90 17</a>
+                                <a class="contact-link" href="tel:+375296168036">+375 (29) 616 80 36</a>
+                                <p>ООО "Офисвэй"</p>
+                                <p>УНП 193193406</p>
+                                <p>г. Минск, ул. В. Голубка 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </section>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>
