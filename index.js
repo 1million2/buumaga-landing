@@ -1,5 +1,7 @@
 const popup = document.querySelector(".popup");
 const body = document.querySelector('body');
+const headerContact = document.querySelector('.header_btn-phone');
+
 
 document.addEventListener('click', (e) => {
     if (e.target.closest(".order-btn") || e.target.closest(".buy")) {
@@ -18,4 +20,7 @@ document.addEventListener('click', (e) => {
     } 
 })
 
+headerContact.addEventListener('click', (e) => {
+    document.querySelector('.phone-number').classList.toggle('active')
+})
 

@@ -108,7 +108,7 @@ header::after {
     width: 100%;
     content: '';
     display: block;
-    height: 30px;
+    height: 35px;
     background: linear-gradient(0deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 78%) 38%, rgb(0 0 0) 100%);
 }
 
@@ -440,7 +440,9 @@ h1 {
 }
 
 .copy {
-    margin-top: auto;
+    padding-left: 10px;
+    margin-top: 70px;
+    text-align: center;
 }
 
 @media (max-width: 790px) {
@@ -463,6 +465,7 @@ h1 {
 
     .card-items {
         justify-content: center;
+        padding: 0 10px;
     }
     .item {
         flex-grow: 1;
@@ -487,6 +490,35 @@ h1 {
     .phone-number {
         display: none;
     }
+
+    .phone-number.active {
+        position: relative;
+        display: flex;
+        position: absolute;
+        row-gap: 30px;
+        top: 100px;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        height: 300px;
+    }
+
+    .phone-number.active::after {
+        position: absolute;
+        bottom: -30px;
+        content: '';
+        display: block;
+        height: 50px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 51%, rgba(0,0,0,0.44723827030812324) 100%);
+    }
+
+    .contact-link {
+        font-size: 33px;
+        font-family: 'Roboto-Bold';
+        text-align: center;
+    }
+
     .contacts .icon {
         width: 55px;
     }
@@ -503,7 +535,7 @@ h1 {
 
 @media (max-width: 450px) {
     .heading h1 {
-        font-size: calc(24px + 33 * (100vw / 1024));
+        font-size: calc(24px + 32 * (100vw / 1024));
     }
 
     .description p {
@@ -537,8 +569,11 @@ h1 {
         row-gap: 50px;
     }
     .copy {
-        order: 3;
         width: 100%;
+        margin-top: auto;
+        text-align: right;
+        padding: 0 10px 10px 0;
+        order: 3;
     }
     
     .footer_contacts .icon {
@@ -547,6 +582,12 @@ h1 {
 
     .footer_contacts .contact-link {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .order {
+        display: none;
     }
 }
 
