@@ -168,7 +168,7 @@ header::after {
 
 .hero {
     margin-bottom: 100px;
-    background: linear-gradient(to right, #0000006e, #000000ad), url(./assets/img/bg.webp) center no-repeat;
+    background: linear-gradient(to right, #000000ad, #0000009c), url(./assets/img/bg.webp) center no-repeat;
     background-size: cover;
 }
 
