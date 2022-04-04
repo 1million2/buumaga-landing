@@ -23,6 +23,7 @@ document.addEventListener('click', (e) => {
 })
 
 headerContact.addEventListener('click', (e) => {
+    e.preventDefault()
     document.querySelector('.phone-number').classList.toggle('active')
 })
 
