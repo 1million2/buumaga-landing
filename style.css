@@ -168,7 +168,8 @@ header::after {
 
 .hero {
     margin-bottom: 100px;
-    background: linear-gradient(to right, #000000b8, #000000b8), url(./assets/img/bcg.jpg);
+    background: linear-gradient(to right, #0000006e, #000000ad), url(./assets/img/bg.webp) center no-repeat;
+    background-size: cover;
 }
 
 .hero_bg {
@@ -563,7 +564,8 @@ h1 {
 
     .hero.footer {
         height: auto;
-        background: linear-gradient(180deg, rgba(0,0,0,0.4962359943977591) 0%, rgba(0,0,0,1) 62%), url(./assets/img/bcg.jpg);
+        background: linear-gradient(180deg, rgba(0,0,0,0.4962359943977591) 0%, rgba(0,0,0,1) 62%), url(./assets/img/bg.webp);
+        background-size: contain;
     }
 
     .footer_body {
