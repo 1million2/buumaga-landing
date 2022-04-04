@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: https://makarichak.tech/sitemap.xml
+Disallow: 
+
+User-agent: YandexBot
+Sitemap: https://makarichak.tech/sitemap.xml
+Disallow: 
