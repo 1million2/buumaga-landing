@@ -1,5 +1,3 @@
-
-const popup = document.querySelector(".popup");
 const body = document.querySelector('body');
 const headerContact = document.querySelector('.header_btn-phone');
 
@@ -7,8 +5,6 @@ document.addEventListener('click', (e) => {
     if (e.target.closest(".order-btn") || e.target.closest(".buy")) {
         e.preventDefault()
         modal.open();
-        // popup.classList.add('active');
-        // body.style.overflow = 'hidden';
     }
     
 })
@@ -17,8 +13,6 @@ document.addEventListener('click', (e) => {
     if (e.target.closest(".close")) {
         e.preventDefault()
         modal.close();
-        // popup.classList.remove('active');
-        // body.style.overflow = 'auto';
     } 
 })
 
@@ -50,5 +44,20 @@ var modal = new tingle.modal({
 });
 
 
-modal.setContent('<p class="popup_text">Колличество и наличие уточняйте по телефону</p> \n <a class="popup_tel" href="tel:+375291579017">+375 (29) 157-90-17</a>');
-
+modal.setContent(`
+                <p class="popup_text"'>Пункты самовывоза:</p>
+                <ul class="shop-list">
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfLxwLA">ул. В. Голубка 2 (ТЦ Bonus)</a></li>
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPECpC">ул. Матусевича 66</a></li>
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPQrKD">ул. Слободская 57</a></li>
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPQLtD">ул. Сурганова 50 (ТЦ Рига)</a></li>
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPEdkC">б-р Шевченко 12</a></li>
+                <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPah0A">ул. Связистов 11</a></li>
+                </ul>
+                <p class="popup_text">
+                    Колличество и наличие уточняйте по телефону:
+                </p> \n 
+                <a class="popup_tel" href="tel:+375291579017">
+                    +375 (29) 157-90-17
+                </a>`
+);
