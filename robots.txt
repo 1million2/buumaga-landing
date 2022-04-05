@@ -1,7 +1,7 @@
 User-agent: *
-Sitemap: https://makarichak.tech/sitemap.xml
+Sitemap: https://bumaga-ox.by/sitemap.xml
 Disallow: 
 
 User-agent: YandexBot
-Sitemap: https://makarichak.tech/sitemap.xml
+Sitemap: https://bumaga-ox.by/sitemap.xml
 Disallow: 
