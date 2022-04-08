@@ -44,6 +44,31 @@ var modal = new tingle.modal({
     }
 });
 
+const form = document.querySelector('.form');
+
+form.addEventListener('submit' , sendForm)
+
+async function sendForm(e) {
+    e.preventDefault()
+    console.log('form send');
+
+    const formData = new FormData(form);
+    console.log(formData);
+
+    const response = await fetch('mail.php', {
+        method: 'POST',
+        body: formData
+    });
+    if (response.ok) {
+        const result = await response.json();
+        console.log(result);
+        form.reset();
+    }
+    else {
+
+    }
+}
+
 
 
 modal.setContent(`
@@ -72,31 +97,4 @@ modal.setContent(`
                 </ul>`
 );
 
-
-// send form
-
-const form = document.querySelector('.form');
-
-form.addEventListener('submit' , sendForm)
-
-async function sendForm(e) {
-    e.preventDefault()
-    console.log('form send');
-
-    const formData = new FormData(form);
-    console.log(formData);
-
-    const response = await fetch('mail.php', {
-        method: 'POST',
-        body: formData
-    });
-    if (response.ok) {
-        const result = await response.json();
-        console.log(result);
-        form.reset();
-    }
-    else {
-
-    }
-}
 
