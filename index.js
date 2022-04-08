@@ -1,3 +1,4 @@
+
 const body = document.querySelector('body');
 const headerContact = document.querySelector('.header_btn-phone');
 
@@ -30,10 +31,10 @@ var modal = new tingle.modal({
     closeLabel: "Закрыть",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        console.log('modal open');
+
     },
     onClose: function() {
-        console.log('modal closed');
+        
     },
     beforeClose: function() {
         // here's goes some logic
@@ -44,7 +45,22 @@ var modal = new tingle.modal({
 });
 
 
+
 modal.setContent(`
+                <div class="">
+                <form action="./mail.php" class="form">
+                    <p class="popup_text form-text">Оставьте свой номер телефона и мы перезвоним в ближайшее время:</p>
+                    <input type="tel" name="tel" id="" required placeholder="Введите номер телефона (+375)">
+                    <input type="submit" value="Оставить заявку">
+                </form>
+                </div>
+                <p class="popup_text">
+                Колличество и наличие уточняйте по телефону:
+                </p>
+                <a class="popup_tel" href="tel:+375291579017">
+                +375 (29) 157-90-17
+                </a>
+                <hr>
                 <p class="popup_text"'>Пункты самовывоза:</p>
                 <ul class="shop-list">
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfLxwLA">ул. В. Голубка 2 (ТЦ Bonus)</a></li>
@@ -53,11 +69,34 @@ modal.setContent(`
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPQLtD">ул. Сурганова 50 (ТЦ Рига)</a></li>
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPEdkC">б-р Шевченко 12</a></li>
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPah0A">ул. Связистов 11</a></li>
-                </ul>
-                <p class="popup_text">
-                    Колличество и наличие уточняйте по телефону:
-                </p> \n 
-                <a class="popup_tel" href="tel:+375291579017">
-                    +375 (29) 157-90-17
-                </a>`
+                </ul>`
 );
+
+
+// send form
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit' , sendForm)
+
+async function sendForm(e) {
+    e.preventDefault()
+    console.log('form send');
+
+    const formData = new FormData(form);
+    console.log(formData);
+
+    const response = await fetch('mail.php', {
+        method: 'POST',
+        body: formData
+    });
+    if (response.ok) {
+        const result = await response.json();
+        console.log(result);
+        form.reset();
+    }
+    else {
+
+    }
+}
+
