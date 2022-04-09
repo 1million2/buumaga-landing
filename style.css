@@ -59,6 +59,15 @@ ul {
     color: #c75939;
     font-family: 'Roboto-Light';
 }
+.loadind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadind img{
+    width: 100px;
+    height: 100px;
+}
 
 .form {
     display: flex;
