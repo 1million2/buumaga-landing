@@ -1,7 +1,8 @@
+// маска для формы
+import './inputmask.js'
 
-const body = document.querySelector('body');
+
 const headerContact = document.querySelector('.header_btn-phone');
-
 
 // modal
 var modal = new tingle.modal({
@@ -18,7 +19,7 @@ var modal = new tingle.modal({
                 <div class="">
                 <form action="./mail.php" class="form">
                     <p class="popup_text form-text">Оставьте свой номер телефона и мы перезвоним в ближайшее время:</p>
-                    <input type="tel" name="tel" id="" required placeholder="Введите номер телефона (375)">
+                    <input type="tel" name="tel" id="tel" required>
                     <input type="submit" value="Оставить заявку">
                 </form>
                 </div>
@@ -51,7 +52,7 @@ modal.setContent(`
                 <div class="">
                 <form action="./mail.php" class="form">
                     <p class="popup_text form-text">Оставьте свой номер телефона и мы перезвоним в ближайшее время:</p>
-                    <input type="tel" name="tel" id="" required placeholder="Введите номер телефона (375)">
+                    <input type="tel" name="tel" id="tel" required>
                     <input type="submit" value="Оставить заявку">
                 </form>
                 </div>
@@ -77,6 +78,10 @@ modal.setContent(`
 // send form
 document.addEventListener('click', (e) => {
     if (e.target.closest(".order-btn") || e.target.closest(".buy")) {
+        //  создаем маску для формы
+        const selector = document.getElementById("tel");
+        Inputmask({"mask": "+(375) 99-999-99-99"}).mask(selector);
+
         e.preventDefault()
         modal.open();
 
