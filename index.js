@@ -2,6 +2,8 @@
 const body = document.querySelector('body');
 const headerContact = document.querySelector('.header_btn-phone');
 
+
+// modal
 var modal = new tingle.modal({
     footer: false,
     stickyFooter: false,
@@ -69,7 +71,10 @@ modal.setContent(`
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPEdkC">б-р Шевченко 12</a></li>
                 <li><a class="shop-link" target="_blank" href="https://yandex.by/maps/-/CCUBfPah0A">ул. Связистов 11</a></li>
                 </ul>`
-        );
+);
+
+
+// send form
 document.addEventListener('click', (e) => {
     if (e.target.closest(".order-btn") || e.target.closest(".buy")) {
         e.preventDefault()
@@ -94,7 +99,6 @@ document.addEventListener('click', (e) => {
                     `<p class="popup_text">Спасибо за заявку!</p>
                     <p class="popup_text">Наш менеджер скоро с вами свяжется!</p>
                 `)
-                // modal.open();
                 const t = setTimeout(() => {
                     modal.close()
                 }, 3000)
@@ -109,10 +113,11 @@ document.addEventListener('click', (e) => {
     
 })
 
+
 headerContact.addEventListener('click', (e) => {
     e.preventDefault()
     document.querySelector('.phone-number').classList.toggle('active')
-})
+});
 
 
 
