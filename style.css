@@ -360,12 +360,16 @@ h1 {
 }
 
 .delivery h3 {
+    width: 600px;
     font-size: 18px;
     text-align: center;
     font-family: 'Roboto-Light';
+    line-height: 30px;
+    margin: 0 auto;
 }
 
 .sale {
+    height: 500px;
     margin: 0 auto;
     background-color: #ffded5;
 }
