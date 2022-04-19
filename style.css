@@ -365,6 +365,14 @@ h1 {
     font-family: 'Roboto-Light';
 }
 
+.sale {
+    margin: 0 auto;
+    background-color: #ffded5;
+}
+.sale h3:nth-child(2) {
+    margin-bottom: 30px;
+}
+
 .map {
     margin-bottom: 100px;
     padding: 0 10px 0 10px;
