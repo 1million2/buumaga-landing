@@ -346,9 +346,10 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
+    min-height: 300px;
     margin-bottom: 30px;
     align-content: space-between;
+    padding: 0 15px;
 }
 
 .delivery h2{
@@ -360,7 +361,7 @@ h1 {
 }
 
 .delivery h3 {
-    width: 600px;
+    max-width: 600px;
     font-size: 18px;
     text-align: center;
     font-family: 'Roboto-Light';
@@ -369,7 +370,7 @@ h1 {
 }
 
 .sale {
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
     background-color: #ffded5;
 }
@@ -541,6 +542,9 @@ h1 {
     .map-image {
         width: 100%;
     }
+    .delivery h2 {
+        font-size: calc(24px + 30 * (100vw / 1024));
+    }
 }
 
 @media (max-width: 470px) {
@@ -611,10 +615,6 @@ h1 {
         padding: 10px;
     }
 
-    .delivery h2 {
-        font-size: calc(24px + 55 * (100vw / 1024));
-    }
-
     .shop-list {
         margin-left: 0;
     }
@@ -648,6 +648,7 @@ h1 {
 }
 
 @media (max-width: 400px) {
+
     .order .icon {
         width: 35px;
         height: 35px;
