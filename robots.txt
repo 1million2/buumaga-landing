@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow:
+Sitemap: https://bumaga-ox.by/sitemap.xml
+
+User-agent: YandexBot
+Sitemap: https://bumaga-ox.by/sitemap.xml
+Disallow: 
