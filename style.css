@@ -42,13 +42,26 @@ ul {
     max-width: 1024px;
     margin: 0 auto;
 }
-
+.amount-body {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-right: auto;
+}
+#amount {
+    text-align: center;
+    height: 30px;
+    width: 50px;
+}
 .popup_tel {
     color: #000000;
     font-size: 30px;
     text-decoration: none;
     text-align: center;
     margin-bottom: 20px;
+}
+.popup__order-text span {
+    font-family: 'Roboto-Light';
 }
 
 .popup_text {
@@ -322,6 +335,9 @@ h1 {
 }
 
 .item_price {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
     margin-left: auto;
     font-size: 20px;
     font-family: 'Roboto-Regular';
@@ -413,6 +429,7 @@ h1 {
     position: fixed;
     bottom: 100px;
     right: 30px;
+    z-index: 1000;
 }
 
 .order p {
@@ -523,6 +540,7 @@ h1 {
 
     .card-items {
         justify-content: center;
+        row-gap: 30px;
         padding: 0 10px;
     }
     .item {
@@ -610,6 +628,12 @@ h1 {
         font-size: 30px;
         margin-left: 0;
     }
+    .item:hover .item_description {
+        bottom: 51px;
+    }
+    .buy {
+        font-size: 26px;
+    }
 
     .delivery {
         padding: 10px;
@@ -656,6 +680,9 @@ h1 {
     .order-btn {
         width: 75px;
         height: 75px;
+    }
+    .form {
+        padding: 15px;
     }
 
 }
